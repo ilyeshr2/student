@@ -1,0 +1,37 @@
+//this code is not used in the project, it is just a sample of the payload that is sent to the server
+{
+    "action": "next",
+    "messages": [
+        {
+            "id": "aaa2930f-2a96-40cb-8831-76f29f76e5a9",
+            "author": {
+                "role": "user"
+            },
+            "content": {
+                "content_type": "text",
+                "parts": [
+                    "hi" //user message
+                ]
+            },
+            "metadata": {},
+            "create_time": 1725514135.065
+        }
+    ],
+    "parent_message_id": "aaa1055b-59ce-438f-9de7-ad425507ca97",
+    "model": "auto",
+    "timezone_offset_min": -60,
+    "suggestions": [],
+    "history_and_training_disabled": false,
+    "conversation_mode": {
+        "kind": "primary_assistant"
+    },
+    "force_paragen": false,
+    "force_paragen_model_slug": "",
+    "force_nulligen": false,
+    "force_rate_limit": false,
+    "reset_rate_limits": false,
+    "websocket_request_id": "e8195885-6bcc-4525-a370-20a4f4338a9b",
+    "system_hints": [],
+    "force_use_sse": true,
+    "conversation_origin": null
+}
