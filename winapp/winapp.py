@@ -4,7 +4,7 @@ import requests
 import time
 import socket
 
-FLASK_BACKEND_URL = "http://172.20.10.2:5000/api/log"
+FLASK_BACKEND_URL = "http://127.0.0.1:5000/api/log"
 
 def log_activity(student_name, timestamp, url, message):
     data = {
@@ -13,7 +13,6 @@ def log_activity(student_name, timestamp, url, message):
         'url': url,
         'userMessages': [message]
     }
-
     try:
         response = requests.post(FLASK_BACKEND_URL, json=data)
         print(response)
