@@ -25,7 +25,7 @@ chrome.webRequest.onBeforeRequest.addListener(
                             const studentName = data.studentName || 'Unknown';  // Default to 'Unknown' if not found
 
                             // Send the log data to the server
-                            fetch('http://192.168.20.55:5000/api/log', {
+                            fetch('https://studentgptdetector-6af5d2a6f427.herokuapp.com/api/log', {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         };
 
         // Send page visit logs to the server
-        fetch('http://192.168.20.55:5000/api/log', {
+        fetch('https://studentgptdetector-6af5d2a6f427.herokuapp.com/api/log', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

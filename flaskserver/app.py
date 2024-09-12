@@ -73,6 +73,7 @@ def get_logs_by_student(student_name):
 @app.route('/api/log', methods=['POST'])
 def log_activity():
     data = request.json
+    print(data)
     student_name = data.get('studentName', 'Unknown')
     timestamp = data.get('timestamp')
     url = data.get('url')
